@@ -1,7 +1,7 @@
 package com.crowdrise.tests;
 
-import crowdrise.resource.Config;
-import crowdrise.resource.PageObjectModelResources;
+import com.crowdrise.resource.Config;
+import com.crowdrise.resource.PageObjectModelResources;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;

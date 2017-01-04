@@ -1,4 +1,4 @@
-package crowdrise.resource;
+package com.crowdrise.resource;
 
 /**
  * Created by MadMax on 1/3/2017.

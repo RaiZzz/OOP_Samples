@@ -1,7 +1,7 @@
-package crowdrise.resource;
+package com.crowdrise.resource;
 
+import com.crowdrise.pages.*;
 import com.github.javafaker.Faker;
-import crowdrise.pages.*;
 import org.openqa.selenium.WebDriver;
 
 import java.util.Locale;

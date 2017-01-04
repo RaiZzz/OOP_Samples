@@ -1,4 +1,4 @@
-package crowdrise.pages;
+package com.crowdrise.pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

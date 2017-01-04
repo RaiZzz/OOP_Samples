@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit;
 
 /**
  * Created by MadMax on 1/3/2017.
+ * All objects of project and helpers.
+ * Used for collaboration between resource and tests.
  */
 public class PageObjectModelResources {
 
@@ -23,9 +25,13 @@ public class PageObjectModelResources {
     private User user;
     private Faker faker;
 
+    /**
+     * Script that create new instance of all objects,
+     * Give access to Getters.
+     */
     public void setUpScript(WebDriver driver)
     {
-        //implicit wait
+        //Implicitly Wait and Maximize Windows before test.
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         driver.manage().window().maximize();
 
@@ -65,9 +71,18 @@ public class PageObjectModelResources {
         return user;
     }
 
+    /**
+     * Faker basically create fake object,
+     * like address, city, names, ets.
+     */
     protected Faker getFaker(){
         return faker;
     }
+
+    /**
+     * Helper that delete all cookies and close browser.
+     *
+     */
     protected void breakDownHelper(WebDriver driver) {
         driver.manage().deleteAllCookies();
         driver.quit();

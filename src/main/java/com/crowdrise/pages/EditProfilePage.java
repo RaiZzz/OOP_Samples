@@ -81,7 +81,7 @@ public class EditProfilePage {
         return driver.findElement(By.cssSelector(".button.radius.primary.small.account-button"));
     }
 
-    public WebElement updatedSuccessfullMessage()
+    public WebElement updatedSuccessfulMessage()
     {
         return driver.findElement(By.xpath("//*[@id='system_message_0']"));
     }

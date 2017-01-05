@@ -7,10 +7,6 @@ package com.crowdrise.resource;
  */
 public class Config {
 
-    private static final String baseURL = "https://www.crowdrise.com/";
+    public static final String BASEURL = "https://www.crowdrise.com/";
 
-    public static String getBaseURL()
-    {
-        return baseURL;
-    }
 }

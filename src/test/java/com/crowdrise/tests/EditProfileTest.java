@@ -36,7 +36,7 @@ public class EditProfileTest extends PageObjectModelResources {
         setUpScript(driver);
 
         //Add base URL into browser
-        driver.get(Config.getBaseURL());
+        driver.get(Config.BASEURL);
         Thread.sleep(sleepTime*3);
 
         //Login in to CrowRise with credentials from "User" Class.
@@ -86,13 +86,16 @@ public class EditProfileTest extends PageObjectModelResources {
         getEditProfile().saveButton().click();
         Thread.sleep(sleepTime*3);
 
-        // Verify that information saved by getting successful message same as "expectedResult".
+        //Verify that information saved by getting successful message same as "expectedResult".
         Assert.assertEquals(getEditProfile().updatedSuccessfulMessage().getText(), expectedResult);
     }
 
     @AfterTest
     public void breakDown()
     {
+        //Log Out
+        getNavBar().profileIcon().click();
+        getNavBar().logOutLink().click();
         breakDownHelper(driver);
     }
 }
